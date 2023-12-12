@@ -7,7 +7,7 @@ import Projects from "../components/projects/Projects";
 import Footer from "../components/footer/Footer";
 
 // import Hello from "../components/hello/Hello";
-import NavButton from "../components/button/navButton";
+import NavButton from "../components/button/NavButton";
 
 const Home = () => {
   return (
