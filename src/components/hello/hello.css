@@ -1,0 +1,40 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #222222;
+}
+
+.greetings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.greetings > h1 {
+  font-size: 2rem;
+  margin: 10px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  color: white;
+}
+
+.fadeOutUp {
+  animation-name: fadeOutUp;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOutUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100vh) rotate(-10deg);
+    opacity: 0;
+  }
+}
