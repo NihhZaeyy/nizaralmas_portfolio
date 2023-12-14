@@ -1,0 +1,39 @@
+.nav-button-container {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease-in-out, transform 0.4s ease-in-out;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+  z-index: 20;
+  border-radius: 9999px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-button-container {
+    top: 30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.nav-button-container.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.nav-button-container.hide {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.icon-wrapper {
+  transition: transform 0.3s ease;
+}
+
+.icon-wrapper.open {
+  transform: rotate(180deg);
+}

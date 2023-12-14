@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { BiMenu } from "react-icons/bi";
+import { CgClose } from "react-icons/cg";
 
-const NavButton = () => {
+import "./navButton.css";
+
+const NavButton = ({ toggleSideNav }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClick = () => {
+    setIsOpen((prevIsOpen) => !prevIsOpen);
+    toggleSideNav();
+  };
+
   return (
     <>
-      <button className="w-20 h-20 fixed z-10 bottom-5 lg:bottom-10 right-5 lg:right-10 bg-[#222222] rounded-full flex justify-center items-center border border-[#a6a6a6] hover:brightness-110">
-        <BiMenu size={30} color="white" />
+      <button
+        className="w-16 h-16 bg-[#222222] rounded-full flex justify-center items-center border border-[#a6a6a6] hover:brightness-110"
+        onClick={handleClick}
+      >
+        <div className={`icon-wrapper ${isOpen ? "open" : ""}`}>
+          {isOpen ? (
+            <CgClose size={30} color="white" />
+          ) : (
+            <BiMenu size={30} color="white" />
+          )}
+        </div>
       </button>
     </>
   );

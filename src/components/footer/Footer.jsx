@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-2">
           <p className="text-[#C0C0C0] text-[12px]">LOCAL TIME</p>
-          <p>{currentTime.toLocaleTimeString()} GMT +3</p>
+          <p>{currentTime.toLocaleTimeString()}</p>
         </div>
         <div className="flex flex-col gap-2">
           <p className="text-[#C0C0C0] text-[12px]">LOCATION</p>

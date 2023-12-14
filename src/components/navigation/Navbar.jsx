@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./navbar.css";
 
 const Navbar = () => {
   return (
@@ -12,13 +13,13 @@ const Navbar = () => {
       <div className="hidden md:block">
         <ul className="flex gap-8">
           <Link to="">
-            <li>Work</li>
+            <li className="underlined_text">Work</li>
           </Link>
           <Link to="">
-            <li>About</li>
+            <li className="underlined_text">About</li>
           </Link>
           <Link to="">
-            <li>Contact</li>
+            <li className="underlined_text">Contact</li>
           </Link>
         </ul>
       </div>
