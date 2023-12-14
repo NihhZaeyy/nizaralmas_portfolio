@@ -5,6 +5,13 @@
   color: white;
 }
 
+.underlined_text2 {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
 .underlined_text::before {
   content: "";
   position: absolute;
@@ -16,6 +23,22 @@
   transition: width 0.3s ease-in-out;
 }
 
-.underlined_text:hover::before {
+.underlined_text2::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #222222;
+  transition: width 0.3s ease-in-out;
+}
+
+.bg-dot2 {
+  background-color: black;
+}
+
+.underlined_text:hover::before,
+.underlined_text2:hover::before {
   width: 100%;
 }

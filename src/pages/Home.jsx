@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+
 import Navbar from "../components/navigation/Navbar";
 import NameText from "../components/nameText/NameText";
 import Major from "../components/Major";
@@ -6,11 +8,11 @@ import About from "../components/about/About";
 import Projects from "../components/projects/Projects";
 import Footer from "../components/footer/Footer";
 
-// import Hello from "../components/hello/Hello";
 import NavButton from "../components/button/NavButton";
 import "../components/button/navButton.css"; //nav-button style
-import "../components/navigation/sideNav.css";
+import "../components/navigation/sideNav.css"; //sidenav style
 import SideNav from "../components/navigation/SideNav";
+import MoreWork from "../components/button/MoreWork";
 
 const Home = () => {
   const [showNavButton, setShowNavButton] = useState(false);
@@ -37,9 +39,6 @@ const Home = () => {
   return (
     <div className="w-screen h-fit relative">
       <div className="h-screen lg:h-fit w-screen bg-[url('/src/assets/nizaralmas-image.jpg')] bg-cover bg-center flex flex-col justify-between overflow-x-hidden">
-        {/* <div className="fixed w-full h-full left-0 top-0">
-            <Hello />
-        </div> */}
         <Navbar />
         <div className="hidden md:block">
           <Major />
@@ -56,6 +55,7 @@ const Home = () => {
       <div>
         <About />
         <Projects />
+        <MoreWork />
         <Footer />
       </div>
       <div

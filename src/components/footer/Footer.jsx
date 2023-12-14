@@ -13,7 +13,7 @@ const Footer = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="bg-[#222222] h-fit w-screen px-6 pt-16 text-white md:px-20 md:pt-[150px] lg:px-[150px] lg:pb-10">
+    <div className="bg-[#222222] h-fit w-screen px-6 pt-16 text-white md:px-20 md:pt-[150px] lg:px-[150px] lg:pb-10 mt-20">
       <div className="flex gap-4 justify-start items-center text-4xl md:text-[44px] xl:text-[50px] xl:gap-6">
         <img className="w-10 xl:w-20" src={nizarFavicon} alt="miniAvatar" />
         <p>Let's work</p>

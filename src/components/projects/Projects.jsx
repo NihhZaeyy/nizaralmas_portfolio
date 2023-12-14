@@ -2,10 +2,11 @@ import React from "react";
 import wonderfulJogja from "/src/assets/project-wonderful-jogja.png";
 import mizukiSushi from "/src/assets/project-mizuki-sushi.png";
 import caseSepeti from "/src/assets/project-casesepeti.png";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <div className="px-6 w-screen mb-16">
+    <div className="px-6 w-screen">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 pb-16 h-fit md:px-6 md:gap-10 lg:px-10">
         <div className="flex flex-col">
           <div className="px-6 py-16 bg-[#C0C0C0] mb-6">
@@ -47,11 +48,6 @@ const Projects = () => {
             <p>2023</p>
           </div>
         </div>
-      </div>
-      <div className="flex justify-center items-center">
-        <button className="border-[#a6a6a6] px-10 py-4 rounded-[40px] border font-medium">
-          More work
-        </button>
       </div>
       <div></div>
     </div>

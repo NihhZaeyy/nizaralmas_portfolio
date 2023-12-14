@@ -1,0 +1,17 @@
+.parallax-home-pic {
+  height: 100%;
+  width: 100%;
+  background-image: url("/src/assets/nizaralmas-image.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .parallax-home-pic {
+    height: fit-content;
+  }
+}

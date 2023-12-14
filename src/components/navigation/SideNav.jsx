@@ -15,13 +15,14 @@ const SideNav = () => {
 
     return () => clearInterval(interval);
   }, []);
+
   return (
     <div className=" text-white pt-[110px] px-6 sm:px-10 lg:px-20">
       <div className="pb-6 mb-6 border-b-[#a6a6a6] border-b ">
         <p className="text-[#C0C0C0] text-[12px]">NAVIGATION</p>
       </div>
       <ul
-        className={`text-5xl flex flex-col gap-4 mb-6 lg:mb-20 pl-[50px] ${
+        className={`text-5xl flex flex-col gap-6 mb-6 lg:mb-20 pl-[50px] ${
           showList ? "show" : ""
         }`}
       >
