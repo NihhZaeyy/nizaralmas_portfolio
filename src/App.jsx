@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Work from "./pages/Work";
 import ScrollToTop from "./utils/ScrollToTop";
 import AboutPage from "./pages/AboutPage";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/work" element={<Work />}></Route>
         <Route path="/about" element={<AboutPage />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
       </Routes>
     </Router>
   );

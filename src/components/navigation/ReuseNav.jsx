@@ -20,7 +20,7 @@ const ReuseNav = () => {
           <Link to="/about">
             <li className="underlined_text2">About</li>
           </Link>
-          <Link to="">
+          <Link to="/contact">
             <li className="underlined_text2">Contact</li>
           </Link>
         </ul>
