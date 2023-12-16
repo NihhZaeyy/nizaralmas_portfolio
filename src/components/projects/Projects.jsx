@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <div className="px-6 w-screen">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 pb-16 h-fit md:px-6 md:gap-10 lg:px-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 pb-10 h-fit md:px-6 md:gap-10 lg:px-10">
         <div className="flex flex-col">
           <div className="px-6 py-16 bg-[#C0C0C0] mb-6">
             <img src={wonderfulJogja} alt="wonderfuljogja" />

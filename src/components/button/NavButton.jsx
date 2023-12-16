@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import { CgClose } from "react-icons/cg";
+import MagneticHover from "../../utils/MagneticHover";
 
 import "./navButton.css";
 
@@ -12,7 +13,7 @@ const NavButton = ({ toggleSideNav }) => {
   };
 
   return (
-    <>
+    <MagneticHover>
       <button
         className="w-16 h-16 bg-[#222222] rounded-full flex justify-center items-center border border-[#a6a6a6] hover:brightness-110"
         onClick={handleClick}
@@ -25,7 +26,7 @@ const NavButton = ({ toggleSideNav }) => {
           )}
         </div>
       </button>
-    </>
+    </MagneticHover>
   );
 };
 

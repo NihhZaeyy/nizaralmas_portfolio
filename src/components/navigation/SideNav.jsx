@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import MagneticHover from "../../utils/MagneticHover";
 
 import "./sideNav.css";
 
@@ -22,22 +23,30 @@ const SideNav = () => {
         <p className="text-[#C0C0C0] text-[12px]">NAVIGATION</p>
       </div>
       <ul
-        className={`text-5xl flex flex-col gap-6 mb-6 lg:mb-20 pl-[50px] ${
+        className={`text-5xl flex flex-col gap-6 mb-6 lg:mb-20 w-fit ${
           showList ? "show" : ""
         }`}
       >
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/work">Work</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
+        <MagneticHover>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+        </MagneticHover>
+        <MagneticHover>
+          <li>
+            <Link to="/work">Work</Link>
+          </li>
+        </MagneticHover>
+        <MagneticHover>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+        </MagneticHover>
+        <MagneticHover>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </MagneticHover>
       </ul>
       <div className="py-6 flex justify-between items-center">
         <div className="flex flex-col gap-2">

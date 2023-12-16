@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import MagneticHover from "../../utils/MagneticHover";
 
 const Footer = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -15,16 +16,22 @@ const Footer = () => {
       <div className="flex flex-col gap-2 pb-6 border-b-[#a6a6a6] border-b">
         <p className="text-[#C0C0C0] text-[12px]">SOCIAL</p>
         <ul className="flex gap-4">
-          <a href="https://www.instagram.com/nihhzaeyy/" target="_blank">
-            <li>Instagram</li>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/muchammad-nizar-almas-sukirno/"
-            target="_blank"
-          >
-            <li>LinkedIn</li>
-          </a>
-          <li>Twitter</li>
+          <MagneticHover>
+            <a href="https://www.instagram.com/nihhzaeyy/" target="_blank">
+              <li>Instagram</li>
+            </a>
+          </MagneticHover>
+          <MagneticHover>
+            <a
+              href="https://www.linkedin.com/in/muchammad-nizar-almas-sukirno/"
+              target="_blank"
+            >
+              <li>LinkedIn</li>
+            </a>
+          </MagneticHover>
+          <MagneticHover>
+            <li>Twitter</li>
+          </MagneticHover>
         </ul>
       </div>
       <div className="py-6 flex justify-between items-center">
