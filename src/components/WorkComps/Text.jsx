@@ -6,7 +6,7 @@ const Text = () => {
       <h1 className="text-5xl xl:text-[60px]">
         Creating seamless, and impactful experiences.
       </h1>
-      <div className="mt-10 text-xl flex gap-6 font-medium">
+      <div className="mt-10 text-xl gap-6 font-medium flex">
         <button className="px-10 py-5 rounded-[30px] border border-[#a6a6a6] hover:bg-[#222222] hover:text-white duration-300">
           All
         </button>

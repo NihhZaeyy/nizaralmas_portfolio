@@ -34,7 +34,7 @@ const SideNav = () => {
         </MagneticHover>
         <MagneticHover>
           <li>
-            <Link to="/work">Work</Link>
+            <Link to="/project">Project</Link>
           </li>
         </MagneticHover>
         <MagneticHover>

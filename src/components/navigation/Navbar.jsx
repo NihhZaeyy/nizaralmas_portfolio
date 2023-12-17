@@ -18,13 +18,13 @@ const Navbar = () => {
       <div className="hidden md:block">
         <ul className="flex gap-8 justify-center items-center">
           <MagneticHover>
-            <Link to="/work">
-              <li className="underlined_text">Work</li>
+            <Link to="/about">
+              <li className="underlined_text">About</li>
             </Link>
           </MagneticHover>
           <MagneticHover>
-            <Link to="/about">
-              <li className="underlined_text">About</li>
+            <Link to="/project">
+              <li className="underlined_text">Project</li>
             </Link>
           </MagneticHover>
           <MagneticHover>

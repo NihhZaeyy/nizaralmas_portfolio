@@ -18,13 +18,13 @@ const ReuseNav = () => {
       <div className="hidden md:block">
         <ul className="flex gap-8">
           <MagneticHover>
-            <Link to="/work">
-              <li className="underlined_text2">Work</li>
+            <Link to="/about">
+              <li className="underlined_text2">About</li>
             </Link>
           </MagneticHover>
           <MagneticHover>
-            <Link to="/about">
-              <li className="underlined_text2">About</li>
+            <Link to="/project">
+              <li className="underlined_text2">Project</li>
             </Link>
           </MagneticHover>
           <MagneticHover>

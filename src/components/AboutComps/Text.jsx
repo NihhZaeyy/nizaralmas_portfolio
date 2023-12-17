@@ -6,6 +6,8 @@ const Text = () => {
       <h1 className="text-5xl xl:text-[60px]">
         Hi there!, meet your Web Developer
       </h1>
+
+      <div className="flex flex-col"></div>
     </div>
   );
 };
