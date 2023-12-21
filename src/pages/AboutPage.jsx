@@ -31,7 +31,7 @@ const AboutPage = () => {
     <div>
       <ReuseNav />
       <Text />
-      {/* <Profile /> */}
+      <Profile />
       <Footer />
       <div
         className={`nav-button-container ${showNavButton ? "show" : "hide"}`}

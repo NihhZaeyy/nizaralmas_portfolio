@@ -4,7 +4,7 @@ import avatar from "/src/assets/avatar.png";
 
 const Text = () => {
   return (
-    <div className="px-6 mt-16 sm:px-16 md:px-20 lg:px-[150px]">
+    <div className="px-6 mt-6 lg:mt-16 sm:px-16 md:px-20 lg:px-[150px]">
       <h1 className="text-5xl xl:text-[60px]">
         Let's bring your dream website to life!
       </h1>

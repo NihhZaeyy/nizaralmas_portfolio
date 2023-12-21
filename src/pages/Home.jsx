@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 import Navbar from "../components/navigation/Navbar";
 import NameText from "../components/nameText/NameText";

@@ -10,36 +10,43 @@ const NameText = () => {
   let xPercent = 0;
   let direction = -1;
 
-  const animation = () => {
-    if (xPercent <= -100) {
-      xPercent = 0;
-    }
-
-    if (xPercent > 0) {
-      xPercent = -100;
-    }
-
-    gsap.set(firstText.current, { xPercent: xPercent });
-    gsap.set(secondText.current, { xPercent: xPercent });
-    xPercent += 0.07 * direction;
-    requestAnimationFrame(animation);
-  };
-
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    let animationFrameId; // Declare animation frame ID
 
-    gsap.to(slider.current, {
-      scrollTrigger: {
-        trigger: document.documentElement,
-        scrub: 0.5,
-        start: 0,
-        end: window.innerHeight,
-        onUpdate: (e) => (direction = e.direction * -1),
-      },
-      x: "-300px",
-    });
+    const animation = () => {
+      if (xPercent <= -100) {
+        xPercent = 0;
+      }
 
-    requestAnimationFrame(animation);
+      if (xPercent > 0) {
+        xPercent = -100;
+      }
+
+      gsap.set(firstText.current, { xPercent: xPercent });
+      gsap.set(secondText.current, { xPercent: xPercent });
+      xPercent += 0.07 * direction;
+
+      animationFrameId = requestAnimationFrame(animation); // Assign the animationFrameId
+    };
+
+    if (slider.current && firstText.current && secondText.current) {
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.to(slider.current, {
+        scrollTrigger: {
+          trigger: document.documentElement,
+          scrub: 0.5,
+          start: 0,
+          end: window.innerHeight,
+          onUpdate: (e) => (direction = e.direction * -1),
+        },
+        x: "-300px",
+      });
+
+      animationFrameId = requestAnimationFrame(animation);
+    }
+
+    return () => cancelAnimationFrame(animationFrameId);
   }, []);
 
   return (
