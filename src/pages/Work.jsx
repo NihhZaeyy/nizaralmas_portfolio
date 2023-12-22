@@ -5,10 +5,12 @@ import NavButton from "../components/button/NavButton";
 import SideNav from "../components/navigation/SideNav";
 import Projects from "../components/projects/Projects";
 import Footer from "../components/footer/Footer";
+import Archieved from "../components/projects/Archieved";
 
 const Work = () => {
   const [showNavButton, setShowNavButton] = useState(false);
   const [showSideNav, setShowSideNav] = useState(false);
+  const [showArchieved, setShowArchived] = useState(false);
 
   const toggleSideNav = () => {
     setShowSideNav((prevShowSideNav) => !prevShowSideNav);
@@ -27,10 +29,17 @@ const Work = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handlerArchieve = () => {
+    setShowArchived(true);
+  };
+  const handlerProject = () => {
+    setShowArchived(false);
+  };
   return (
     <div className="w-screen h-fit relative">
       <ReuseNav />
-      <Text />
+      <Text project={handlerProject} archieved={handlerArchieve} />
       <div
         className={`nav-button-container ${showNavButton ? "show" : "hide"}`}
       >
@@ -40,7 +49,7 @@ const Work = () => {
         <SideNav />
       </div>
       <div className="mt-10">
-        <Projects />
+        {showArchieved ? <Archieved /> : <Projects />}
       </div>
       <Footer />
     </div>

@@ -7,7 +7,7 @@ const MoreWork = () => {
     <div className="flex justify-center items-center mt-6">
       <MagneticHover>
         <Link to="/project">
-          <button className="border-[#a6a6a6] px-10 py-4 rounded-[40px] border font-medium hover:text-white hover:bg-[#222222] duration-300">
+          <button className="border-button px-10 py-4 rounded-[40px] border font-medium hover:text-color-white hover:bg-color-dark duration-300">
             More Projects
           </button>
         </Link>

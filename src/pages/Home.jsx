@@ -53,7 +53,7 @@ const Home = () => {
       </div>
       <div>
         <About />
-        <Projects />
+        <Projects limit={3} />
         <MoreWork />
         <Footer />
       </div>

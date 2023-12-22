@@ -14,14 +14,14 @@ const Text = () => {
       </div>
       <div className="mt-10 flex flex-col gap-4">
         <div className="flex items-center gap-2">
-          <div className="w-[6px] h-[6px] rounded-full bg-[#a6a6a6]"></div>
+          <div className="w-[6px] h-[6px] rounded-full bg-borderLine"></div>
           <p className="font-medium">CONTACT DETAILS</p>
         </div>
         <div className="flex flex-col text-center md:flex-row gap-4 font-medium text-xl">
-          <div className="px-6 py-2 border border-[#222222] rounded-3xl hover:bg-[#222222] hover:text-white duration-300 cursor-pointer">
+          <div className="px-6 py-2 border border-color-dark rounded-3xl hover:bg-color-dark hover:text-color-white duration-300 cursor-pointer">
             nizaralmas01@gmail.com
           </div>
-          <div className="px-6 py-2 border border-[#222222] rounded-3xl hover:bg-[#222222] hover:text-white duration-300 cursor-pointer">
+          <div className="px-6 py-2 border border-color-dark rounded-3xl hover:bg-color-dark hover:text-color-white duration-300 cursor-pointer">
             +90 552 511 98 52
           </div>
         </div>

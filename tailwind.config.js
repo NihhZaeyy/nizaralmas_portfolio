@@ -1,3 +1,5 @@
+import { CgDarkMode } from "react-icons/cg";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -21,6 +23,17 @@ export default {
     },
     fontFamily: {
       Poppins: "Poppins",
+    },
+    colors: {
+      work: "#C0C0C0",
+      borderLine: "#a6a6a6",
+      button: "#a6a6a6",
+      color: {
+        dark: "#222222",
+        black: "#000",
+        white: "#fff",
+        gray: "#444444",
+      },
     },
   },
   plugins: [],

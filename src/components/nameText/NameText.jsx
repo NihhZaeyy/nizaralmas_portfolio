@@ -52,7 +52,7 @@ const NameText = () => {
   return (
     <div
       ref={slider}
-      className="slider text-white text-[120px] md:text-[180px]"
+      className="slider text-color-white text-[120px] md:text-[180px]"
     >
       <h1 ref={firstText} className="text1">
         Muchammad Nizar Almas Sukirno -
