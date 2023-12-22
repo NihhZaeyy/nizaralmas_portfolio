@@ -29,7 +29,7 @@ const Contact = () => {
   }, []);
   return (
     <div className="w-screen h-fit">
-      <ReuseNav />
+      <ReuseNav title={"Contact"} />
       <Text />
       <ContactForm />
       <Footer />

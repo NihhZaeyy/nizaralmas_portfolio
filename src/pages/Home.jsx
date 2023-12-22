@@ -38,7 +38,7 @@ const Home = () => {
   return (
     <div className="w-screen h-fit relative">
       <div className="h-screen lg:h-fit w-screen bg-[url('/src/assets/nizaralmas-image.jpg')] bg-cover bg-center flex flex-col justify-between overflow-x-hidden">
-        <Navbar />
+        <Navbar title={"Home"} />
         <div className="hidden md:block">
           <Major />
         </div>

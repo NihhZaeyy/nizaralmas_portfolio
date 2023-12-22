@@ -38,7 +38,7 @@ const Work = () => {
   };
   return (
     <div className="w-screen h-fit relative">
-      <ReuseNav />
+      <ReuseNav title={"Project"} />
       <Text project={handlerProject} archieved={handlerArchieve} />
       <div
         className={`nav-button-container ${showNavButton ? "show" : "hide"}`}

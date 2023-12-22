@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Wonderful Jogja",
     "url": "/assets/works/project-wonderful-jogja.png",
-    "year": "July 2023 - December 2023",
+    "year": "December 2023",
     "service": "Design & Development"
   },
   {
@@ -15,16 +15,16 @@
   },
   {
     "id": 3,
-    "name": "Mizaki Sushi",
-    "url": "/assets/works/project-mizuki-sushi.png",
-    "year": "December 2023",
+    "name": "Paguyuban Sorban",
+    "url": "/assets/works/project-paguyuban-sorban.jpg",
+    "year": "2023 - Present",
     "service": "Design & Development"
   },
   {
     "id": 4,
-    "name": "Paguyuban Sorban",
-    "url": "/assets/works/project-paguyuban-sorban.jpg",
-    "year": "2023 - Present",
+    "name": "Mizaki Sushi",
+    "url": "/assets/works/project-mizuki-sushi.png",
+    "year": "December 2023",
     "service": "Design & Development"
   }
 ]

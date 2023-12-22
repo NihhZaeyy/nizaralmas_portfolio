@@ -29,7 +29,7 @@ const AboutPage = () => {
   }, []);
   return (
     <div>
-      <ReuseNav />
+      <ReuseNav title={"About"} />
       <Text />
       <Profile />
       <Footer />
